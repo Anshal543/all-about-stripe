@@ -1,0 +1,91 @@
+.pay-page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.pay-title {
+  font-family: var(--heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.pay-sub {
+  margin: 0 0 28px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pay-sub code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--code-bg);
+}
+
+.pay-loading,
+.pay-error {
+  margin: 0;
+  text-align: center;
+  padding: 48px 16px;
+}
+
+.pay-error {
+  color: #b91c1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pay-error {
+    color: #fca5a5;
+  }
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-amount {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-h);
+}
+
+.checkout-element-wrap {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.checkout-pay {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  background: #635bff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.checkout-pay:hover:not(:disabled) {
+  background: #5851ea;
+}
+
+.checkout-pay:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkout-message {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-h);
+}
